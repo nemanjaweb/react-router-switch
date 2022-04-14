@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import stil from "./MainNavigation.module.css";
+
 const MainNavigation = () => {
   return (
-    <header>
-      <div>React Meetups</div>
+    <header className={stil.header}>
+      <div className={stil.logo}>React Meetups</div>
       <nav>
         <ul>
           <li>
