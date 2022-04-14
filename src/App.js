@@ -1,7 +1,23 @@
+import { Route, Switch } from "react-router-dom";
+
+import AllMeetups from "./pages/AllMeetups";
+import Favorites from "./pages/Favorites";
+import NewMeetup from "./pages/NewMeetup";
+
 function App() {
   return (
     <div>
-      <h1>Hello React-Practice-2</h1>
+      <Switch>
+        <Route path="/" exact={true}>
+          <AllMeetups />
+        </Route>
+        <Route path="/new-meetup">
+          <NewMeetup />
+        </Route>
+        <Route path="/favorites">
+          <Favorites />
+        </Route>
+      </Switch>
     </div>
   );
 }
